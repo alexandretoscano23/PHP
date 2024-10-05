@@ -60,9 +60,17 @@
 
     //callBack
 
-    $code = "<article><h1>Um call user Function!</h1></article>";
-    $codeClear = call_user_func("strip_tags", $code); //retira as tags html do texto
+    $code = "<article><h1>Um call_user_function</h1></article>";
+    $codeClear = call_user_func("strip_tags",$code); //retira as tags html
     var_dump($code, $codeClear);
+
+    echo "<br>";
+
+    //função anônima
+    $codeMore = function($code){
+        var_dump($code);
+    };
+    $codeMore("Função anônima");
     ?>
 </body>
 </html>
