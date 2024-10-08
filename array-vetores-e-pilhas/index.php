@@ -10,10 +10,37 @@
     <hr>
     <br>
     <?php
-        //Array
+        //Array - variáveis com diversas chaves
+
+        $names = [
+            "Alexandre",
+            "Guilherme",
+            "Pedro",
+            "João",
+            "Maria"
+        ];
+        echo "<pre>";
+        //print_r ($names[0]); //exibir o primeiro item da array
+        print_r ($names); //exibe o conteúdo da array
+        
+        //array com diferentes tipos de dados
+
+        $userData = [
+            "name" => "Alexandre",
+            "last_name" => "Toscano",
+            "age" => 25,
+            "height" => 1.80,
+            "weight" => 80.5,
+            "is_married" => true // aparece,na tela, 1 para verdadeiro e se não aparacer nada é falso
+        ];
+        echo "<pre>";
+        print_r($userData);
+
+        echo "<br>";
+
         $array = [1, 2, 3, 4]; //o index sempre começa em 0 (o index 0 é o 1).
         echo "<pre>";
-        var_dump($array);
+        print_r($array);
 
         $arrayIndex = [
             "Alexandre",
@@ -24,7 +51,7 @@
         $arrayIndex[] = "André"; //adiciona um novo valor ao array sem ter que reescrever a array 
         $arrayIndex[] = "Marcos";
 
-        var_dump($arrayIndex);
+        print_r($arrayIndex);
 
         echo "<br>";
 
@@ -38,7 +65,9 @@
         $arrayAssoc["weight"] = 80.5;
         $arrayAssoc["Dados do Usuário"] = "Alexandre ";
         echo "<pre>";
-        var_dump($arrayAssoc);
+        print_r($arrayAssoc);
+
+        echo "<br>";
 
         $acDc = [
             "band" => "AC/DC",
@@ -49,7 +78,7 @@
         ];
 
         echo "<pre>";
-        var_dump("O vocalista da banda AC/DC é {$acDc["vocal"]}. O guitarrista é o {$acDc["guitar"]}"); //pega o valor da array (vocal) por acessar um elemento específico com os colchetes
+        print_r("O vocalista da banda AC/DC é {$acDc["vocal"]}. O guitarrista é o {$acDc["guitar"]}"); //pega o valor da array (vocal) por acessar um elemento específico com os colchetes
 
         echo "<br>";
 
@@ -66,7 +95,7 @@
             "pearl_jam" => $pearl
         ]; //array dentro de array criada para armazenar os dados das outras arrays
 
-        var_dump($rockBands); //exibe as duas arrays
+        print_r($rockBands); //exibe as duas arrays
 
         foreach ($acDc as $key => $value){ //faz um loop por todos os itens da array
             echo "<p>{$value} is a {$key} of band!</p>"; //value - o valor do elemento atual da array. key - o índice do elemento atual da arrray

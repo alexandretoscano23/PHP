@@ -10,8 +10,21 @@
     <hr>
     <br>
 
-    <!---idex.php-->
     <?php
+
+        //condicionais
+
+        $condition1 = "Alexandre";
+        $condition2 = "Alexandre";
+
+        if($condition1 === $condition2 ){
+            echo '<div style="width:300px;height:300px;background:red;"></div>' ;
+        }else{
+            echo "error";
+        }
+
+        echo "<br/>";
+
         $teste = true;
 
         if($teste){ //se o teste for verdadeiro executa determinado bloco de código

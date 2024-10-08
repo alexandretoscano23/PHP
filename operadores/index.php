@@ -11,7 +11,32 @@
     <br>
 
     <?php
+        //operadores
+        $multi = 10 * 2; //20
+        $sum = 10 + 2; //12
+        $divi = 10 / 2; //5
+        $sub = 10 - 2; //8
+        $rest = 10 % 2; //resto da divisão
+
+        echo $multi;
+
+        echo "<br/>";
+
+        //resto
+        $numberRest = 10 % 5; //o resto da divisão de 10 e 5 é 0
+
+        echo $numberRest;
+
+        echo "<br/>";
+
+        //operadores com preferência * e / > + e - (Exceto se estiverem entre parênteses)
+        $num1 = 15;
+        $num2 = 20;
+        $result = 15 * 20 + 5 / (2 + 3); //primeiro os parênteses, dpois a divisão,multiplicação e soma
+        echo $result;
+
         //De Atribuição
+
         // += forma simplificada de atribuição. $varA = varA + num
         $operatorA = 5;
         $operators = [
@@ -22,7 +47,9 @@
             "a %= 5" => ($operatorA %= 5) //resto da divisão por 5
         ];
         echo "<pre>";
-        var_dump($operators);
+
+        print_r($operators);
+
         echo "<br>";
 
         //incremento e decremento
@@ -30,7 +57,7 @@
         $incrementB = 5;
         $increment = [
             "pos-incremento" => $incrementA++, //a próxima vez que chamar a variável, ela será incrementada (recebe +1)
-            "resultado-incremento" => $incrementA, //retornar o valor incrementado sem precisar colocar a variável novamente no var_dump
+            "resultado-incremento" => $incrementA, //retornar o valor incrementado sem precisar colocar a variável novamente no print_r
             "pre-incremento" => ++$incrementA, //incrementa a variável antes de chamar
 
             "pos-decremento" => $incrementB--, //a próxima vez que chamar a variável, ela será decrementada (diminui 1).
@@ -38,7 +65,9 @@
             "pre-decremento" => --$incrementB //decrementa a variável antes de chamar
         ];
         echo "<pre>";
-        var_dump($increment);
+
+        print_r($increment);
+
         echo "<br>";
 
         //De Comparação
@@ -56,7 +85,8 @@
             "a <= b" => ($relatedA <= $relatedB) //verifica se a é menor ou igual a b
         ];
         echo "<pre>";
-        var_dump($related);
+
+        print_r($related);
 
         //Operadores Lógicos
         $logicA = true;
@@ -68,7 +98,7 @@
             "!b" => (!$logicB) //verifica se b não existe
          ];
         echo "<pre>";
-        var_dump($logic);
+        print_r($logic);
 
         //Operadores Aritiméticos
         $calcA = 10;
@@ -81,7 +111,7 @@
             "a % b" => ($calcA % $calcB) //resto da divisão
         ];
         echo "<pre>";
-        var_dump($calc);
+        print_r($calc);
     ?>
 </body>
 </html>
