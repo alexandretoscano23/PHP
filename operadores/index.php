@@ -12,6 +12,7 @@
 
     <?php
         //operadores
+
         $multi = 10 * 2; //20
         $sum = 10 + 2; //12
         $divi = 10 / 2; //5
@@ -21,19 +22,27 @@
         echo $multi;
 
         echo "<br/>";
+        
+//------------------------------------------------------------------------------------------------------------------------------
 
         //resto
+
         $numberRest = 10 % 5; //o resto da divisão de 10 e 5 é 0
 
         echo $numberRest;
 
         echo "<br/>";
+//------------------------------------------------------------------------------------------------------------------------------
 
         //operadores com preferência * e / > + e - (Exceto se estiverem entre parênteses)
+
         $num1 = 15;
         $num2 = 20;
         $result = 15 * 20 + 5 / (2 + 3); //primeiro os parênteses, dpois a divisão,multiplicação e soma
+
         echo $result;
+
+//------------------------------------------------------------------------------------------------------------------------------
 
         //De Atribuição
 
@@ -46,13 +55,17 @@
             "a /= 5" => ($operatorA /= 5), //divide por 5
             "a %= 5" => ($operatorA %= 5) //resto da divisão por 5
         ];
+
         echo "<pre>";
 
         print_r($operators);
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //incremento e decremento
+
         $incrementA = 5;
         $incrementB = 5;
         $increment = [
@@ -64,18 +77,73 @@
             "resultado-decremento" => $incrementB, //retornar o valor decrtementado sem precisar colocar a variável novamente no var_dump
             "pre-decremento" => --$incrementB //decrementa a variável antes de chamar
         ];
+
         echo "<pre>";
 
         print_r($increment);
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //De Comparação
+
+        //um = quer dizer que estamos atribuindo um valor
+
+        $name1 = 1; //var name recebe o valor "1"
+        $name2 = "1";
+
+        //== verifica se os valores são iguais, indepentente do tipo (string ou number)
+
+        if($name1 == $name2){
+            echo "São Iguais"; //vai dar verdadeiro porque o valor é igual
+        }
+
+        echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+        //=== verifica se os valores são iguais e do mesmo tipo
+
+        if($name1 === $name2){
+            echo "São iguais"; //vai dar falso porque o valor é igual, mas o tipo é diferente(str e number)
+        }else{
+            echo "São diferentes";
+        }
+
+        echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------  
+
+        //!= verifica se os valores são diferentes, independente do tipo
+
+        if($name1 != $name2){
+            echo "São diferentes"; //vai dar falso porque o valor é igual
+        }else{
+            echo "São iguais";
+        }
+
+        echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------  
+
+        //!== verifica se os valores são diferentes e de tipos diferentes
+
+        if($name1 !== $name2){
+            echo "tipos diferentes";//vai dar verdadeiro porque os tipos são diferentes
+        }else{
+            echo "tipos iguais";
+        }
+
+        echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------        
+
         $relatedA = 5;
         $relatedB = 5;
         $relatedC = 10;
         $related = [
-            "a == b" => ($relatedA == $relatedB), //verifica se os valores são iguais, independente do tipo
+            "a == b" => ($relatedA == $relatedB), 
             "a === b" => ($relatedA === $relatedB), //verifica se os valores são iguais e do mesmo tipo
             "a != b" => ($relatedA != $relatedB), //verifica se os valores são diferentes, independente do tipo.
             "a !== b" => ($relatedA !== $relatedB), //verifica se os valores são diferentes juntamente com o tipo
@@ -88,7 +156,10 @@
 
         print_r($related);
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //Operadores Lógicos
+
         $logicA = true;
         $logicB = false;
         $logic = [
@@ -97,10 +168,15 @@
             "!a" => (!$logicA), //verifica se a não existe
             "!b" => (!$logicB) //verifica se b não existe
          ];
+
         echo "<pre>";
+
         print_r($logic);
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //Operadores Aritiméticos
+
         $calcA = 10;
         $calcB = 20;
         $calc = [
@@ -110,7 +186,9 @@
             "a / b" => ($calcA / $calcB), //divisão
             "a % b" => ($calcA % $calcB) //resto da divisão
         ];
+
         echo "<pre>";
+
         print_r($calc);
     ?>
 </body>

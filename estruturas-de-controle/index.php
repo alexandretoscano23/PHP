@@ -14,16 +14,22 @@
 
         //condicionais
 
+        //se as variáveis forem iguais, muda a cor da div. Se não, muda para outra cor
+
         $condition1 = "Alexandre";
         $condition2 = "Alexandre";
 
         if($condition1 === $condition2 ){
-            echo '<div style="width:300px;height:300px;background:red;"></div>' ;
+            echo '<div style="width:100px;height:100px;background:lightgreen;">';
+            echo "<p style='position:relative;top:40px;left:40px;color:blue;font-size:1.2rem;'>if<p/></div>";//se a condição for verdadeira, a div fica verde
         }else{
-            echo "error";
-        }
+            echo "<div style='width:100px;height:100px;background:lightcoral;'>";
+            echo "<p style='position:relative;top:40px;left:35px;color:blue;font-size:1.2rem'>else</p></div>";
+        }//se a condição for falsa, a div fica vermelha
 
         echo "<br/>";
+
+//-------------------------------------------------------------------------------------------------------------------------------
 
         $teste = true;
 
@@ -46,7 +52,11 @@
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //Saber se,a depender danota do aluno, ele foi aprovado ou reprovado.
+
+        //else if - se a condição anterior não for verdadeira, executa outra condição
 
         $note = 7;
 
@@ -76,7 +86,10 @@
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //isset() - verifica se a variável foi definida
+
         $trueorFalse = "";
 
         if(isset($trueorFalse)){
@@ -87,8 +100,12 @@
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //empty() - verifica se a variável está vazia
+
         //! - operador de negação que muda o valor booleano de uma expressão (true para false e vice-versa)
+
         $rock = "AC/DC";
 
         if(!empty($rock)){ //o empty verifica se não existe ou se está vazio (usa o operador de negação para inverter o valor e tornar a expressão verdadeira (existe e tem valor))
@@ -99,24 +116,31 @@
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         //switch - executa diferentes blocos de código com base no valor da expressão. 
+
         $payment = "canceled";
 
         switch($payment){
             case "aproved": //caso o valor for aprovado executa o bloco de código
                 echo "Pagamento aprovado";
                 break; //finaliza o bloco de código
+
             case "canceled":
                 echo "Pagamento Cancelado";
                 break;
+
             case "past_due":
             case "pending":
                 echo "Pagamento atrasado ou cancelado";
                 break;
+                
             case "Aprovado":
             case "completed":
                 echo "Pagamento Concluído";
                 break;
+
             default: //caso nãoseja nenhum dos valores acime
                 echo "Erro ao processar o pagamento";
                 break;
