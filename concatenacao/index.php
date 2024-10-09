@@ -22,6 +22,7 @@
     
     //pode também colocar a variável no próprio texto com {$var}. os colchetes servem apenas para diferenciar 
     echo "<br/>";
+    
     echo "Olá, meu nome é {$name}, meu sobrenome é {$lastName} e tenho {$age} anos.";
     
     ?>

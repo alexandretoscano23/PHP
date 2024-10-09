@@ -23,8 +23,11 @@
     // $$company = "PHP"; //recebe a chave do valor da variável anterior. Então $EstudWeb = "PHP"
 
     // echo "<h3>{$company} {$EstudoWeb}</h3>";
+    
+//------------------------------------------------------------------------------------------------------------------------------
 
     //referenciar a variável
+
     $calcA = 10;
     $calcB = 20;
     $calcB = &$calcA; //referencia a variável $calcA para $calcB. Se $calcA mudar, $calcB também muda e vice-versa 
@@ -36,9 +39,12 @@
 
    echo "<br>"; //quebra de linha
 
+//------------------------------------------------------------------------------------------------------------------------------
+
     //Tipos de dados
 
     //boolean (bool) -> retorna true ou false
+
     $true = true;
     $false = false;
 
@@ -47,6 +53,8 @@
     var_dump($Bestage ); //retorna true
 
     echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
 
     $a = 0; // int -> número inteiro
     $b = 0.0; //float -> ponto flutuante
@@ -58,6 +66,8 @@
 
     echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
     //callBack
 
     $code = "<article><h1>Um call_user_function</h1></article>";
@@ -65,6 +75,8 @@
     var_dump($code, $codeClear);
 
     echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
 
     //função anônima
     $codeMore = function($code){

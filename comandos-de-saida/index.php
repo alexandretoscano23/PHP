@@ -9,6 +9,7 @@
     <h1>Estudando Comandos de Saída</h1>
     <hr>
     <br>
+
     <?php
     //para mostrar variáveis ou strings
 
@@ -25,8 +26,12 @@
 
     print_r($array);
 
+//------------------------------------------------------------------------------------------------------------------------------
+
     //para dar saída em uma variável formatada
+
     //tamplate de um artigo 
+    
     $article = "<article><h1>%s</h1><p>%s</p></article>"; //%s entradas de valores para que sejam substituídas
     $title = "Título";
     $text = "algum texto";
