@@ -22,7 +22,9 @@
         echo "<pre>";
         //print_r ($names[0]); //exibir o primeiro item da array
         print_r ($names); //exibe o conteúdo da array
-        
+
+//------------------------------------------------------------------------------------------------------------------------------
+
         //array com diferentes tipos de dados
 
         $userData = [
@@ -37,6 +39,8 @@
         print_r($userData);
 
         echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
 
         $array = [1, 2, 3, 4]; //o index sempre começa em 0 (o index 0 é o 1).
         echo "<pre>";
@@ -54,6 +58,7 @@
         print_r($arrayIndex);
 
         echo "<br>";
+//------------------------------------------------------------------------------------------------------------------------------
 
         //Array Associativo
         $arrayAssoc = [
@@ -69,6 +74,8 @@
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
         $acDc = [
             "band" => "AC/DC",
             "vocal" => "Brian Jhonson",
@@ -81,6 +88,8 @@
         print_r("O vocalista da banda AC/DC é {$acDc["vocal"]}. O guitarrista é o {$acDc["guitar"]}"); //pega o valor da array (vocal) por acessar um elemento específico com os colchetes
 
         echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
 
         $pearl = [
             "band" => "Pearl Jam",
@@ -103,11 +112,17 @@
 
         echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
+        
+
         foreach ($pearl as $key => $value){
             echo "<p>{$value} is a {$key} of band!</p>";
         }
 
         echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
 
         foreach ($rockBands as $rockBands){ //"as" associa o valor do array a uma variável. O segundo rockBands é uma variável criada para o loop receber o valor da array
             $art = "<article><h1>%s</h1><p>%s</p><p>%s</p><p>%s</p></article>";

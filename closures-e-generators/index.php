@@ -27,6 +27,8 @@
     //formatação de números
     echo "<br>";
 
+//------------------------------------------------------------------------------------------------------------------------------
+
     $priceBr = function($price){
         return number_format($price, 2, ",", "."); //formata o número com 2 casas decimais e separa de milhar por vírgula e decimal por ponto
     };
@@ -50,6 +52,8 @@
     var_dump($myCart);
 
     echo "<br>";
+
+//------------------------------------------------------------------------------------------------------------------------------
 
     //generator - permite criar iteradores sem a nescessidade de construir um array completo na memória.
 
