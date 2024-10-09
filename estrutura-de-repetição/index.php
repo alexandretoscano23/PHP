@@ -66,14 +66,7 @@
 
         echo "<br>";
 
-//------------------------------------------------------------------------------------------------------------------------------
 
-        //foreach - faz um loop por cada elemento
-
-        $array = [1,2,3];
-        foreach($array as $key => $value){ //para cada elemento da array atribui a chave e o valor
-            echo "<p>{$key} => {$value}</p>";
-        }
     ?>
 </body>
 </html>
