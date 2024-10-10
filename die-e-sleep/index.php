@@ -14,7 +14,7 @@
     
     //sleep - faz o script esperar um determinado tempo,em segundos, para executar o código
 
-    //sleep(); //o servidor espera 5 segundos para executar o código
+    sleep(5); //o servidor espera 5 segundos para executar o código
 
     echo "Olá!";
 

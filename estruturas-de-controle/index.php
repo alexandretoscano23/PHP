@@ -120,12 +120,28 @@
 
         //switch - executa diferentes blocos de código com base no valor da expressão. 
 
+        $name = "Alexandre";
+
+        switch($name){
+            case "Alexandre": //caso o valor seja Alexandre, executa o bloco de código
+                echo "Olá, Alexandre";
+                break; //finaliza o bloco de código
+            case "Cleiton":
+                echo "Olá, Cleiton";
+                break;
+            default: //se não for nenhum dos valores acima.
+                echo "Olá";
+                break;
+        }
+
+        echo "<br>";
+
         $payment = "canceled";
 
         switch($payment){
-            case "aproved": //caso o valor for aprovado executa o bloco de código
+            case "aproved": 
                 echo "Pagamento aprovado";
-                break; //finaliza o bloco de código
+                break; 
 
             case "canceled":
                 echo "Pagamento Cancelado";
@@ -141,7 +157,7 @@
                 echo "Pagamento Concluído";
                 break;
 
-            default: //caso nãoseja nenhum dos valores acime
+            default: 
                 echo "Erro ao processar o pagamento";
                 break;
                 
