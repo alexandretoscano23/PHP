@@ -111,6 +111,30 @@
        echo "<br>";
 
        echo htmlentities('<div>conteúdo da div</div>'); //exibe os códigos html
+
+       echo "<br>";
+//------------------------------------------------------------------------------------------------------------------------------
+
+       //funções para manipular arrays
+
+       $arr1 = [1,2,3,4,5];
+       $arr2 = ['a','b','c','d','e'];
+       $junction = array_merge($arr1,$arr2); //array_merge - faz a junção de arrays
+
+       echo "<pre/>";
+
+       print_r($junction);
+
+       echo "<br>";
+
+       $array1 = [1,'a'=>'primeira',3,'z',5];
+       $array2 = ['a'=>'segunda',2,'b',4,'c'];
+
+       print_r(array_intersect_key($array1,$array2)); //array_intersect_key - compara as chaves de dois arrays e retorna as chaves iguais. Mostra a primeira chave da primeira array e retorna o valor igual correspondente da segunda array
+//------------------------------------------------------------------------------------------------------------------------------
+
+       
+
     ?>
 </body>
 </html>
