@@ -96,9 +96,9 @@
 
        echo "<br>";
 
-       $nomes = implode(' ',$names); //implode - concatenar elementos de um array em uma única string.
+       $names = implode(' ',$names); //implode - concatenar elementos de um array em uma única string.
 
-       echo $nomes;
+       echo $names;
 
        echo "<br>";
 
@@ -127,11 +127,19 @@
 
        echo "<br>";
 
-       $array1 = [1,'a'=>'primeira',3,'z',5];
-       $array2 = ['a'=>'segunda',2,'b',4,'c'];
+       $array1 = [1,'a',3,'z',5];//chaves a seren verificadas
+       $array2 = ['a',2,'b',4,'c'];//comparar as chaves
+       
+       // * se não tiver nenhum valor igual,não retorna nada
 
-       print_r(array_intersect_key($array1,$array2)); //array_intersect_key - compara as chaves de dois arrays e retorna as chaves iguais. Mostra a primeira chave da primeira array e retorna o valor igual correspondente da segunda array
+       print_r(array_intersect_key($array1,$array2)); //array_intersect_key - retorna todos os valores de array1 que tem as mesmas chaves presentes em todos os argumentos
 //------------------------------------------------------------------------------------------------------------------------------
+
+     $ar = ['<p>Alexandre<p/>','Paulo','Maria','João','<h1>Pedro<h1/>'];  
+
+    print_r (array_map('strip_tags',$ar));//array_map - aplica uma função em todos os elementos de um array. strip_tags - função nativa do php que remove tags html
+
+    // * podemos criar a função por fora e passar como o callback do array_map ou apenas passar a função nativa do php
 
        
 
