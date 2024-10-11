@@ -14,7 +14,7 @@
         <input type="text" name="name" id="name">
         <input type="text" name="email" id="email">
         <input type="submit" name="action" value="enviar">
-    </form> -->
+    </form>  -->
 
     <form action="" method="post">
 
@@ -26,18 +26,18 @@
         <input type="submit" name="action" value="enviar">  -->
 
         <!-- exemplo 2 -->
-        <!-- <input type="checkbox" name="select[]" id="select" value="10"> 
-        <input type="checkbox" name="select[]" id="select" value="20">
-        <input type="checkbox" name="select[]" id="select" value="30">
-        <input type="checkbox" name="select[]" id="select" value="40">
-        <input type="submit" name="action" value="enviar">  -->
+        <!-- <input type="checkbox" name="select[]" id="select" value="10"> 10
+        <input type="checkbox" name="select[]" id="select" value="20"> 20
+        <input type="checkbox" name="select[]" id="select" value="30"> 30
+        <input type="checkbox" name="select[]" id="select" value="40">  40
+        <input type="submit" name="action" value="enviar"> -->
 
         <!-- [] - faz o select se tornar um array, permitindo selecionar mais de um valor-->
     </form>
 
     <?php
         // exemplo 1 com get
-        // $_GET - variável global que recebe os valores passados pelo formulário
+       // $_GET - variável global que recebe os valores passados pelo formulário
 
         // if(isset($_GET['action'])){ //verifica se o índice action existe.
         //     $name = $_GET['name']; //recebe o valor do input name
@@ -49,7 +49,7 @@
         // }
 
         // exemplo 1 com post
-        //Post - método de envio de dados do formulário. Porém, nãoé visívelna url
+        //Post - método de envio de dados do formulário. Porém, não é visível na url
 
         // if(isset($_POST['action'])){
         //     $name = $_POST['name'];
@@ -65,11 +65,18 @@
         //post - para enviar dados mais sensíveis, como senhas, enviar grande velume de dados e precisa de mais segurança. Não mostrando os dados na url.
 
         //exemplo 2
-        // if(isset($_POST['action'])){
-        //     echo $_POST['name'];
+        //  if(isset($_POST['action'])){
+        //     foreach($_POST['select'] as $key => $value){
+        //         echo $value;
+        //         echo "<br>";
+        //     }
             
-        // }
+        //  }
+
 
     ?>
+        
+
+    </form>
 </body>
 </html>
